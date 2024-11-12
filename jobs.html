@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Cards</title>
+  <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f2f6fa;
+    }
+    .job-card-container {
+        display: flex;
+        gap: 20px;
+    }
+    .job-card {
+        background-color: #ffffff;
+        width: 350px;
+        height: 350px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        position: relative;
+    }
+    .job-type {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.75em;
+        color: #fff;
+    }
+    .hourly {
+        background-color: #34c759;
+    }
+    .part-time {
+        background-color: #ff9500;
+    }
+    .rate {
+        font-size: 1.25em;
+        /* margin: 20px 0; */
+        color: #333;
+    }
+    h3 {
+        margin: 10px 0;
+        font-size: 1.2em;
+        color: #333;
+    }
+    .company {
+        font-size: 0.9em;
+        color: #007aff;
+        margin-bottom: 15px;
+    }
+    .tags {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+    .tags span {
+        background-color: #e0e0e0;
+        border-radius: 12px;
+        padding: 5px 10px;
+        /* font-size: 0.8em; */
+    }
+    .description {
+        font-size: 0.9em;
+        color: #666;
+        margin: 15px 0;
+    }
+    .view-job {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007aff;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 0.9em;
+        transition: background-color 0.3s ease;
+    }
+    .view-job:hover {
+        background-color: #005bb5;
+    }
+</style>
+</head>
+<body>
+  <div class="job-card-container">
+    <!-- Job Card 1 -->
+    <div class="job-card">
+      <div class="job-type hourly">hourly</div>
+      <div class="rate">$55 / hr</div>
+      <h3>UI/UX Designer</h3>
+      <p class="company">Epic Coders</p>
+      <div class="tags">
+        <span sty>UI</span>
+        <span>UX</span>
+        <span>photoshop</span>
+        <span style="background-color: blue; color: white;">+4</span>
+      </div>
+      <p class="description">
+        We are looking for an experienced UI and UX designer to work on our new projects...
+      </p>
+      <button class="view-job">VIEW JOB</button>
+    </div>
+    
+    <!-- Job Card 2 -->
+    <div class="job-card">
+      <div class="justify">
+        <div class="job-type part-time">part-time</div>
+        <div class="rate">$32 / hr</div>
+      </div>
+      <h3>Branding Expert</h3>
+      <p class="company">Hubstaff</p>
+      <div class="tags">
+        <span>PHP</span>
+        <span>android</span>
+        <span>iOS</span>
+        <span style="background-color: blue; color: white;">+2</span>
+      </div>
+      <p class="description">
+        Looking for an experienced person to help us with rebranding our business. We are interested in a...
+      </p>
+      <button class="view-job">VIEW JOB</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
